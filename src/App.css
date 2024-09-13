@@ -1,0 +1,155 @@
+body {
+  width: 100vw;
+  height: 300vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  pointer-events: all;
+  background-color: rgb(255, 0, 0);
+}
+
+.title-container {
+  width: 150vw;
+  height: 150vh;
+  position: relative;
+}
+
+.Spline {
+  width: 120vw;
+  left: -10vw;
+  transform: scale(1);
+  top: -5vh;
+  position: absolute;
+  display: none;
+  z-index: 3;
+}
+
+
+.border {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  display: none;
+  left: 0;
+  z-index: 5;
+  transition: height 2s cubic-bezier(.2,1,0,1);
+}
+
+section {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  background-color: pink;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#section3 {
+  height: 300vh;
+}
+
+.title, .titleSVG {
+  position: absolute;
+  left: calc(50vw - 0.5 * 58vw);
+  top: calc(50vh - 0.5 * 36.67vh);
+}
+
+.titleSVG {
+  width: 58vw;
+  height: 36.67vh;
+  display: block;
+  pointer-events: none;
+  transition: transform .8s, opacity .8s;
+}
+
+.titleSVGBottom {
+  transform: translate(2.5vw,15vh);
+}
+.titleSVGTop {
+  transform: translate(-2.5vw,-15vh);
+}
+
+.title p {
+  opacity: 1;
+  font-family: "Alfa Slab One", sans-serif;
+  font-size: 13vw;
+  position: absolute;
+  color: white;
+  
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  transition: transform .8s, opacity .8s;
+  opacity: 0;
+  transform: translateX(5vw);
+}
+
+.descriptionpart2 {
+  transform: translateX(-5vw);
+}
+
+
+.description p {
+  font-family: "Lexend", sans-serif;
+  font-size: 3.4vw;
+  max-width: 90vw;
+  color: white;
+  transition: transform .8s, opacity .8s;
+}
+
+.video-container {
+  background-color: orange;
+  width: 90vw;
+  left: 5vw;
+  border-radius: 50px;
+  height: 100vh;
+  position: absolute;
+  top: 40vh;
+  z-index: 5;
+  opacity: 0;
+  transition: width .8s, left .8s, top .8s, opacity .8s
+}
+
+.title-work {
+  position: absolute;
+  width: 40vw;
+  left: 14vw;
+  top: 0;
+  transform: scale(1.5);
+  transition: opacity 1s cubic-bezier(.45,.36,0,1.01);
+}
+
+
+.bg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.work-example {
+  position: absolute;
+  width: 100vw;
+  border-radius:0px;
+  height: fit-content;
+  top: 50vh;
+  height: 110vh;
+  overflow: hidden; /* Added to hide overflow */
+}
+
+.work-example img {
+  position: relative; /* Changed to relative */
+  width: 100vw;
+  top: 10vh;
+  height: 145vh;
+}
+
+.work-example1 {
+  position: relative;
+}
